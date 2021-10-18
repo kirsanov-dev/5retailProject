@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B03F661271B4E54003ECDE0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B03F660271B4E54003ECDE0 /* TabBarController.swift */; };
 		0BFDBD1626FCEBEF0031C0DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFDBD1526FCEBEF0031C0DC /* AppDelegate.swift */; };
 		0BFDBD1826FCEBEF0031C0DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFDBD1726FCEBEF0031C0DC /* SceneDelegate.swift */; };
 		0BFDBD1A26FCEBEF0031C0DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFDBD1926FCEBEF0031C0DC /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B03F660271B4E54003ECDE0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0BFDBD1226FCEBEF0031C0DC /* 5retailProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5retailProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFDBD1526FCEBEF0031C0DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BFDBD1726FCEBEF0031C0DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		0B03F65D271B32FE003ECDE0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0B03F65F271B4E44003ECDE0 /* TabBar */,
 				0BFDBD1926FCEBEF0031C0DC /* ViewController.swift */,
 			);
 			path = Scenes;
@@ -77,6 +80,14 @@
 				0BFDBD2026FCEBF40031C0DC /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0B03F65F271B4E44003ECDE0 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0B03F660271B4E54003ECDE0 /* TabBarController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		0BFDBD0926FCEBEF0031C0DC = {
@@ -174,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BFDBD1A26FCEBEF0031C0DC /* ViewController.swift in Sources */,
+				0B03F661271B4E54003ECDE0 /* TabBarController.swift in Sources */,
 				0BFDBD1626FCEBEF0031C0DC /* AppDelegate.swift in Sources */,
 				0BFDBD1826FCEBEF0031C0DC /* SceneDelegate.swift in Sources */,
 			);
