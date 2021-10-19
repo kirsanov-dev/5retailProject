@@ -1,0 +1,6 @@
+framework module Pods_5retailProject {
+  umbrella header "Pods-5retailProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
