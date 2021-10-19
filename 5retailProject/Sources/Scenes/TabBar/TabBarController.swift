@@ -9,6 +9,8 @@ import UIKit
 
 final class MainTabBarController: UITabBarController {
     
+    private var scenes: [Scene] = [.main, .catalog, .basket, .profile]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewControllers()
@@ -24,19 +26,14 @@ final class MainTabBarController: UITabBarController {
     
     private func setupViewControllers() {
         
-        let tabBarItems = [
-            UITabBarItem(title: "Главная", image: UIImage(systemName: "house"), tag: 0),
-            UITabBarItem(title: "Каталог", image: UIImage(systemName: "circle.grid.2x2"), tag: 1),
-            UITabBarItem(title: "Корзина", image: UIImage(systemName: "cart"), tag: 2),
-            UITabBarItem(title: "Профиль", image: UIImage(systemName: "person"), tag: 3)
-        ]
+        let tabBarItems = scenes.map {
+            UITabBarItem(
+                title: $0.title,
+                image: $0.image,
+                selectedImage: $0.selectedImage
+            ) }
         
-        let initialViewControllers = [
-            ViewController(),
-            ViewController(),
-            ViewController(),
-            ViewController()
-        ]
+        let initialViewControllers = scenes.compactMap { $0.viewController }
         
         let viewControllers = zip(tabBarItems, initialViewControllers)
             .compactMap { tabItem, viewController -> UIViewController in
